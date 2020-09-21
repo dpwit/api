@@ -8,10 +8,14 @@ request.onload = function () {
   //begin accessing JSON data here
   var data = JSON.parse(this.response)
 
-  data.forEach((movie) => {
+  if (request.status >= 200 && request.status < 400) {
+    data.forEach((movie) => {
     //Log each movie title with the JSON file
     console.log(movie.title)
-  })
+    })
+  } else {
+    console.log('error')
+  }
 }
 
 //Send request.
