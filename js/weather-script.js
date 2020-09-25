@@ -13,7 +13,7 @@ app.appendChild(container)
 var request = new XMLHttpRequest()
 
 //Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=24d10e4fb421418e6e7fc7ee3e891b4c', true)
 
 request.onload = function () {
   //begin accessing JSON data here
