@@ -1,23 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Current Weather</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/weather.css">
+	<meta charset="utf-8">
+	<title>Current Weather</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/weather.css">
 </head>
 <body>
 	<div class="bg"></div>
 	<div>
-    <div id="description"></div>
-    <h1 id="location"></h1>
-    <div id="temp"></div>
-    <div id="main"></div>
-    <div id="humidity"></div>
-    <div>
-    	Wind Speed: <span id="windSpeed"></span>
-    </div>
-  </div>
-  <script src="js/weather-script-city.js"></script>
+		<h1 id="location"></h1>
+		<div>
+			Detailed description: <span id="description"></span>
+		</div>
+		<div>
+			Temperature: <span id="temp"></span>
+		</div>
+		<div>
+			General description: <span id="main"></span>
+		</div>
+		<div>
+			Humidity: <span id="humidity"></span>
+		</div>
+		<div>
+			Wind Speed: <span id="windSpeed"></span>
+		</div>
+	</div>
+	<script src="js/weather-script-city.js"></script>
 </body>
 </html>
