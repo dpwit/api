@@ -1,7 +1,7 @@
 const key = '24d10e4fb421418e6e7fc7ee3e891b4c';
 
 function weatherData() {
-	fetch('https://api.openweathermap.org/data/2.5/weather?id=2643743' + '&appid=' + key)
+	fetch('https://api.openweathermap.org/data/2.5/group?id=524901,703448,2643743' + '&appid=' + key)
 
 	.then(function(resp) { return resp.json() }) // Convert data to json
 	.then(function(data) {
